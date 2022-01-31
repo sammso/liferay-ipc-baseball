@@ -31,6 +31,7 @@ public class CatcherPortlet extends GenericPortlet {
 	public void catchBall(EventRequest request, EventResponse response) {
 		Event event = request.getEvent();
 		String pitch = (String) event.getValue();
+		System.err.println("Catching pitch " + pitch);
 		response.setRenderParameter("pitch", pitch);
 	}
 

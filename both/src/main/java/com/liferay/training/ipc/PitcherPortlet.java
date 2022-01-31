@@ -47,6 +47,7 @@ public class PitcherPortlet extends GenericPortlet {
 		default:
 			pitchType = "Screw Ball";
 		}
+		System.err.println("pitcher is picthing ball: " + pitchType);
 		QName qName = new QName("http://liferay.com/events", "ipc.pitch");
 		response.setEvent(qName, pitchType);
 	}
